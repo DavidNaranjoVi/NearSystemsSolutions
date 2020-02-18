@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1C45CA19-CCEA-4139-8380-E0471FF6D58E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>NearSystemsSolutions</RootNamespace>
+    <AssemblyName>NearSystemsSolutions</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>55</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>219EA969683B62B05619DA06811F7A15AB4FC08E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>NearSystemsSolutions_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsQuery, Version=1.3.3.249, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\CsQuery.1.3.4\lib\net40\CsQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlAgilityPack, Version=1.11.9.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlAgilityPack.1.11.9\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.AWT.WinForms, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.AWT.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Beans, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Beans.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Charsets, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Charsets.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Cldrdata, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Cldrdata.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Corba, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Corba.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Core, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Jdbc, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Jdbc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Localedata, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Localedata.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Management, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Media, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Misc, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Misc.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Naming, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Naming.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Nashorn, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Nashorn.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Remoting, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Remoting.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Security, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.SwingAWT, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.SwingAWT.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Text, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Text.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Tools, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.Util, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.API, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.API.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Bind, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Bind.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Crypto, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Parse, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.Transform, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.Transform.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.WebServices, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.WebServices.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.OpenJDK.XML.XPath, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.OpenJDK.XML.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="IKVM.Runtime.JNI, Version=8.1.5717.0, Culture=neutral, PublicKeyToken=13235d27fcbfff58, processorArchitecture=MSIL">
+      <HintPath>packages\IKVM.8.1.5717.0\lib\IKVM.Runtime.JNI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.15.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnadirEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnadirEmpresa.Designer.cs">
+      <DependentUpon>AnadirEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Anexo.cs" />
+    <Compile Include="AppConfiguration.cs" />
+    <Compile Include="consultaContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaContrato.Designer.cs">
+      <DependentUpon>consultaContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarBorrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarBorrador.Designer.cs">
+      <DependentUpon>ConsultarBorrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarCliente.Designer.cs">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarFichaMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarFichaMantenimiento.Designer.cs">
+      <DependentUpon>ConsultarFichaMantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearAnexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearAnexo.Designer.cs">
+      <DependentUpon>CrearAnexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearElemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearElemento.Designer.cs">
+      <DependentUpon>CrearElemento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consultaFichaAbonadocs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consultaFichaAbonadocs.Designer.cs">
+      <DependentUpon>consultaFichaAbonadocs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contrato.cs" />
+    <Compile Include="Cliente_Iban.cs" />
+    <Compile Include="ContratoPlantilla.cs" />
+    <Compile Include="Contrato_Elemento.cs" />
+    <Compile Include="CrearContrato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearContrato.Designer.cs">
+      <DependentUpon>CrearContrato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearFichaMantenimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearFichaMantenimiento.Designer.cs">
+      <DependentUpon>CrearFichaMantenimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="DBSesion.cs" />
+    <Compile Include="elegirDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="elegirDocumento.Designer.cs">
+      <DependentUpon>elegirDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Elemento.cs" />
+    <Compile Include="ElementoPlantilla.cs" />
+    <Compile Include="Empresa.cs" />
+    <Compile Include="FichaAbonado.cs" />
+    <Compile Include="FichaMantenimiento.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarElemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarElemento.Designer.cs">
+      <DependentUpon>ConsultarElemento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarElemento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ActualizarElemento.Designer.cs">
+      <DependentUpon>ActualizarElemento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnadirElementos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnadirElementos.Designer.cs">
+      <DependentUpon>AnadirElementos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearFichaAbonado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearFichaAbonado.Designer.cs">
+      <DependentUpon>CrearFichaAbonado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnadirZona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnadirZona.Designer.cs">
+      <DependentUpon>AnadirZona.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnadirPersonaContacto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnadirPersonaContacto.Designer.cs">
+      <DependentUpon>AnadirPersonaContacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrearCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrearCliente.Designer.cs">
+      <DependentUpon>CrearCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarAnexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultarAnexo.Designer.cs">
+      <DependentUpon>ConsultarAnexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracionDoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfiguracionDoc.Designer.cs">
+      <DependentUpon>ConfiguracionDoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenerarDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarDocumento.Designer.cs">
+      <DependentUpon>GenerarDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListaContactos.cs" />
+    <Compile Include="NombreBorrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NombreBorrador.Designer.cs">
+      <DependentUpon>NombreBorrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestZonas.cs" />
+    <Compile Include="Zona.cs" />
+    <EmbeddedResource Include="AnadirEmpresa.resx">
+      <DependentUpon>AnadirEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultaContrato.resx">
+      <DependentUpon>consultaContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarAnexo.resx">
+      <DependentUpon>ConsultarAnexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarBorrador.resx">
+      <DependentUpon>ConsultarBorrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarCliente.resx">
+      <DependentUpon>ConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarFichaMantenimiento.resx">
+      <DependentUpon>ConsultarFichaMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearAnexo.resx">
+      <DependentUpon>CrearAnexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearElemento.resx">
+      <DependentUpon>CrearElemento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consultaFichaAbonadocs.resx">
+      <DependentUpon>consultaFichaAbonadocs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearContrato.resx">
+      <DependentUpon>CrearContrato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearFichaMantenimiento.resx">
+      <DependentUpon>CrearFichaMantenimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="elegirDocumento.resx">
+      <DependentUpon>elegirDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarElemento.resx">
+      <DependentUpon>ConsultarElemento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActualizarElemento.resx">
+      <DependentUpon>ActualizarElemento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnadirElementos.resx">
+      <DependentUpon>AnadirElementos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearFichaAbonado.resx">
+      <DependentUpon>CrearFichaAbonado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnadirZona.resx">
+      <DependentUpon>AnadirZona.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnadirPersonaContacto.resx">
+      <DependentUpon>AnadirPersonaContacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrearCliente.resx">
+      <DependentUpon>CrearCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfiguracionDoc.resx">
+      <DependentUpon>ConfiguracionDoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarDocumento.resx">
+      <DependentUpon>GenerarDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NombreBorrador.resx">
+      <DependentUpon>NombreBorrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="NearSystemsSolutions_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
